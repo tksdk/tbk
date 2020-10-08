@@ -30,8 +30,7 @@
 	},
 	"autoload": {
 		"files": [
-            "TopSdk.php"
-        ]
-	}
-	
+			"TopSdk.php"
+		]
+	}	
 }
