@@ -1,0 +1,30 @@
+{
+	"name": "tenet/tbk",
+	"type": "library",
+    "description": "淘宝联盟sdk, 只保留了淘宝联盟相关信息",
+    "keywords": [
+        "淘客",
+		"淘宝联盟",
+		"sdk"
+	],
+	"minimum-stability": "dev",
+	"authors": [
+		{
+			"name": "shanezhiu",
+			"email": "shanezhiu@gmail.com"
+		}
+	],
+	"require-dev": {
+		"codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "codeception/module-rest":"*",
+        "mockery/mockery": "^1.4@dev"
+	},
+	"autoload": {
+		"files": [
+            "TopSdk.php"
+        ]
+	}
+	
+}
