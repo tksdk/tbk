@@ -15,6 +15,12 @@
 			"email": "shanezhiu@gmail.com"
 		}
 	],
+	"require": {
+		"ext-curl": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+        "ext-openssl": "*"
+	},
 	"require-dev": {
 		"codeception/codeception": "^4.1",
         "codeception/module-phpbrowser": "^1.0.0",
