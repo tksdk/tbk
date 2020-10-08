@@ -13,60 +13,19 @@ class Autoloader{
           $name = strstr($class, '\\', true);
         }
         
-        $filename = TOP_AUTOLOADER_PATH."/top/".$name.".php";
+        $filename = TOP_AUTOLOADER_PATH."/src/".$name.".php";
         if(is_file($filename)) {
             include $filename;
             return;
         }
 
-        $filename = TOP_AUTOLOADER_PATH."/top/request/".$name.".php";
+        $filename = TOP_AUTOLOADER_PATH."/src/request/".$name.".php";
         if(is_file($filename)) {
             include $filename;
             return;
         }
 
-        $filename = TOP_AUTOLOADER_PATH."/top/domain/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }
-
-        $filename = TOP_AUTOLOADER_PATH."/aliyun/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }
-
-        $filename = TOP_AUTOLOADER_PATH."/aliyun/request/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }
-
-        $filename = TOP_AUTOLOADER_PATH."/aliyun/domain/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }      
-
-        $filename = TOP_AUTOLOADER_PATH."/dingtalk/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }
-        $filename = TOP_AUTOLOADER_PATH."/dingtalk/request/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }
-
-        $filename = TOP_AUTOLOADER_PATH."/dingtalk/domain/".$name.".php";
-        if(is_file($filename)) {
-            include $filename;
-            return;
-        }         
-		
-		$filename = TOP_AUTOLOADER_PATH."/QimenCloud/".$name.".php";
+        $filename = TOP_AUTOLOADER_PATH."/src/domain/".$name.".php";
         if(is_file($filename)) {
             include $filename;
             return;
